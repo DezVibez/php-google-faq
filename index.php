@@ -1,7 +1,16 @@
 <?php 
 
 
-
+$sezioni = [
+    [
+        'domanda' => 'come si fa questo',
+        'risposta' => 'si fa cosi'
+    ],
+    [
+        'domanda' => 'come si fa quello',
+        'risposta' => 'si fa <href>cosà<href>'
+    ]
+    ];
 
 
 
@@ -16,8 +25,12 @@
     <title>Document</title>
 </head>
 <body>
-
-    <h1>ciao</h1>
+    <ul>
+        <?php foreach($sezioni as $sezione){?>
+            <li> <?php echo $sezione['domanda'] ?> </li>
+            <li> <?php echo $sezione['risposta'] ?> </li>
+        <?php }?>
+    </ul>
     
 </body>
 </html>
