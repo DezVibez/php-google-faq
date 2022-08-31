@@ -76,19 +76,36 @@ $sezioni = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Faqs</title>
+
+    <!--importato fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header>
 
-    <div class="d-flex">
+    <div class="d-flex space-between align-vert">
+
+        <div class="d-flex">
+            <img class="logo-google" src="img/580b57fcd9996e24bc43c51f.png" alt="">
+            <h2>Privacy e termini</h2>
+        </div>
+
+        <div class="d-flex">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-brands fa-google-plus"></i>
+        </div>
+
+        </div>
+        
+        <div class="d-flex">
+            <span>Introduzione</span><span>Norme sulla Privacy</span><span>Termini di Servizio</span><span>Tecnologie</span><span>Domande Frequenti</span>
+        </div>
+
+        
 
     </div>
-
-    <div>
-
-    </div>
-
+    <hr>
     </header>
 
 
@@ -109,6 +126,10 @@ $sezioni = [
     </ul>
 
     <footer>
+
+        <div class="container">
+
+        </div>
         
     </footer>
     
@@ -127,6 +148,14 @@ $sezioni = [
 
     .d-flex {
         display: flex;
+    }
+
+    .space-between {
+        justify-content: space-between;
+    }
+
+    .align-vert{
+        align-items: center:
     }
 
     /* Generics*/
@@ -153,6 +182,10 @@ $sezioni = [
 
     .risposte{
         margin: 30px 0;
+    }
+
+    .logo-google {
+        height: 40px;
     }
 
 </style>
