@@ -84,28 +84,28 @@ $sezioni = [
 
     <header>
 
-    <div class="d-flex space-between align-vert">
+        <div class="d-flex space-between align-vert">
 
-        <div class="d-flex">
-            <img class="logo-google" src="img/580b57fcd9996e24bc43c51f.png" alt="">
-            <h2>Privacy e termini</h2>
+            <div class="d-flex">
+                <img class="mx-2 logo-google" src="img/580b57fcd9996e24bc43c51f.png" alt="">
+                <h2 class="mx-2" >Privacy e termini</h2>
+            </div>
+
+            <div class="d-flex">
+                <i class=" mx-2 fa-solid fa-circle"></i>
+                <i class=" mx-2 fa-brands fa-google-plus"></i>
+            </div>
+
+            </div>
+            
+            <div class="d-flex ">
+                <span class="mx-2">Introduzione</span><span>Norme sulla Privacy</span><span class="mx-2" >Termini di Servizio</span><span>Tecnologie</span><span class="mx-2">Domande Frequenti</span>
+            </div>
+
+            
+
         </div>
-
-        <div class="d-flex">
-            <i class="fa-solid fa-circle"></i>
-            <i class="fa-brands fa-google-plus"></i>
-        </div>
-
-        </div>
-        
-        <div class="d-flex">
-            <span>Introduzione</span><span>Norme sulla Privacy</span><span>Termini di Servizio</span><span>Tecnologie</span><span>Domande Frequenti</span>
-        </div>
-
-        
-
-    </div>
-    <hr>
+        <hr>
     </header>
 
 
@@ -127,8 +127,16 @@ $sezioni = [
 
     <footer>
 
-        <div class="container">
+        <hr>
 
+        <div class="container d-flex space-between">
+                <div>
+                    <span>Google</span> <span>Tutto su Google</span> <span>Privacy</span> <span>Termini</span>
+                </div>
+
+                <div>
+                    
+                </div>
         </div>
         
     </footer>
@@ -143,7 +151,6 @@ $sezioni = [
     .container {
         margin: 0 auto;
         max-width: 70%;
-        padding: 70px 0;
     }
 
     .d-flex {
@@ -156,6 +163,10 @@ $sezioni = [
 
     .align-vert{
         align-items: center:
+    }
+
+    .mx-2{
+        margin: 0 20px;
     }
 
     /* Generics*/
