@@ -86,9 +86,9 @@ $sezioni = [
 
         <div class="d-flex space-between align-vert">
 
-            <div class="d-flex">
+            <div class="d-flex header-top">
                 <img class="mx-2 logo-google" src="img/580b57fcd9996e24bc43c51f.png" alt="">
-                <h2 class="mx-2" >Privacy e termini</h2>
+                <h2 class="" >Privacy e termini</h2>
             </div>
 
             <div class="d-flex">
@@ -187,8 +187,26 @@ $sezioni = [
         text-decoration: none;
     }
 
+    h2{
+        color: rgb(60,64,67);
+    }
+
+    header h2{
+        margin: 0 0;
+        align-self: end;
+    }
+
+    header i{
+        align-self: center;
+    }
+
+    .header-top{
+        margin-bottom: 20px;
+    }
+
     h3 {
         margin-top: 50px;
+        color: rgb(95,99,103);
     }
 
     .risposte{
@@ -197,6 +215,10 @@ $sezioni = [
 
     .logo-google {
         height: 40px;
+    }
+
+    footer{
+        background-color: rgb(245,245,245);
     }
 
 </style>
