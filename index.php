@@ -1,5 +1,7 @@
 <?php 
 
+$start_link_tag = "<a href='#'> ";
+$end_link_tag = "</a>";
 $parte_lista = "<ol>
                     <li>
                         La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
@@ -22,7 +24,7 @@ $parte_lista = "<ol>
 $sezioni = [
     [
         'domanda' => "<h2> Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio? <h2>",
-        'risposte' => ["La recente decisione della Corte di giustizia dell'Unione europea ha profonde conseguenze per i motori di ricerca in Europa.
+        'risposte' => ["La recente $start_link_tag decisione della Corte di giustizia dell'Unione europea $end_link_tag ha profonde conseguenze per i motori di ricerca in Europa.
                          La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, 
                          irrilevanti o non più rilevanti, o eccessivi.",
                         "Da quando questa decisione è stata pubblicata il 13 maggio 2014, abbiamo lavorato incessantemente per uniformarci a essa. Si tratta di una procedura complessa perché dobbiamo valutare ogni singola richiesta 
