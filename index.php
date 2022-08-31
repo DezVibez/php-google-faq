@@ -3,13 +3,13 @@
 
 $sezioni = [
     [
-        'domanda' => 'come si fa questo',
+        'domanda' => ' <h1> come si fa questo <h1> ',
         'risposte' => ['si fa cosi', 'si fa cosà']
     ],
     [
-        'domanda' => 'come si fa quello',
+        'domanda' => ' <h1> come si fa quello <h1>',
         'risposte' => ['si fa come la', 'si fa come qua']
-    ]
+    ],
     ];
 
 
@@ -29,11 +29,11 @@ $sezioni = [
         <?php foreach($sezioni as $sezione){?>
             <li> 
                 <div> <?php echo $sezione['domanda'] ?> </div>  
-                <ul>
+                <ol>
                     <?php foreach($sezione['risposte'] as $risposte) {?>
                         <li> <?php echo $risposte ?></li>
                     <?php }?>
-                </ul>
+                </ol>
             </li>
             
         <?php }?>
@@ -41,3 +41,11 @@ $sezioni = [
     
 </body>
 </html>
+
+<style>
+
+    * {
+        list-style-type: none;
+    }
+
+</style>
